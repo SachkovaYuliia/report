@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <title>lab7</title>
+</head>
+<body>
+    <header class="header">
+        <h1>ЛАБОРАТОРНА РОБОТА №7</h1>
+        <h2>Тема: КЛАСИ. ОБ'ЄКТНА МОДЕЛЬ ДОКУМЕНТА (DOM). ПОДІЇ. ОБ'ЄКТ ПОДІЇ.
+            ДЕЛЕГУВАННЯ ПОДІЙ. THROTTLE. МОДУЛЬНОСТЬ КОДУ</h2>
+        <h3>Мета: придбати практичні навички роботи з об'єктами. Методи об'єкта.
+            Callback. Стрілочні функції. Стрілочні функції як колбеки​.Реалізація програм засобами мови JAVASCRIPT
+            </h3>
+    </header>
+    <main>
+        <section class="section"> 
+            <h3 class="black">Завдання 2</h3>
+            <p>У звітному HTML-документі створити html-розміту,
+                яка складається з наступних елементів: текст, кнопка,
+                два інпута (поля введення ). Після натискання кнопки SWAP ME здійснюється
+                обмін вмістом між двома інпутами.
+                Ви можете натиснути на неї кілька разів або вручну змінити вміст інпутів.
+                У звітному HTML-документі відобразити скрін програмного коду.   
+        <h3 class="black">Виконання</h3>
+        <input type="text" id="input1" placeholder="Input 1">
+        <input type="text" id="input2" placeholder="Input 2">
+        <button type="button" onclick="swapInputs()">SWAP ME</button>  
+        </section>
+        <section class="section"> 
+            <h3 class="black">Завдання 4</h3>
+            <p>У звітному HTML-документі створити html-розміту,
+                яка складається з наступних елементів: текст, блок
+                (div), дві кнопки. Кнопка Зменшити робить квадрат менше на 15
+                пікселів.
+                Повторний натиск на кнопці Зменшити робить
+                квадрат ще менше на 15 пікселів.
+                Збільшити – робить квадрат більше на 15 пікселів.
+                Повторний натиск на кнопці Зменшити   робить
+                квадрат ще більше на 15 пікселів.
+                У звітному HTML-документі відобразити скрін
+                програмного коду  
+            </p>
+            <h3 class="black">Виконання</h3>
+            <div id="canvas">
+                <h2 id="squareTitle">ЗАВДАННЯ 4</h2>
+                <div id="square"></div>
+                <div id="buttons">
+                    <button onclick="decreaseSize()">Зменшити</button>
+                    <button onclick="increaseSize()">Збільшити</button>
+                </div>
+            </div>
+        </section>
+        <section class="section"> 
+            <h3 class="black">Завдання 6</h3>
+            <p> У звітному HTML-документі створити html-розміту,
+                яка складається з наступних елементів : текст,
+                маркирований список. Натиснувши кнопку Подвоїти, збільшити значення
+                у кожному елементі списку у 2 рази. Повторний натиск
+                на кнопці Подвоїти, також збільшить значення у
+                кожному елементі списку у 2 рази
+                У звітному HTML-документі відобразити скрін
+                програмного коду
+            </p>
+            <h3 class="black">Виконання</h3>
+            <div id="list">
+            <h2>ЗАВДАННЯ 6</h2>
+            <ul id="myList">
+                <li>1</li>
+                <li>4</li>
+                <li>8</li>
+                <li>16</li>
+                <li>20</li>
+                <li>30</li>
+            </ul>
+            <button onclick="doubleValues()">Подвоїти</button>
+            </div>   
+        </section> 
+        <section class="section"> 
+            <h3 class="black">Завдання 7</h3>
+            <p> Напиши скрипт, який:
+                1. Порахує і виведе в консоль кількість категорій
+                в ul#categories, тобто елементів li.item.
+                2. Для кожного элемента li.item у
+                списку ul#categories, знайде і виведе в консоль
+                текст заголовку елемента (тегу h2) і кількість
+                елементів в категорії (усіх , вкладених в
+                нього).
+                Для виконання цього завдання потрібно використати
+                метод forEach() і властивості навігації по DOM.             
+            </p>
+            <h3 class="black">Виконання</h3>
+            <ul id="categories">
+                <li class="item">
+                <h2>Animals</h2>
+                <ul>
+                    <li>Cat</li>
+                    <li>Hamster</li>
+                    <li>Horse</li>
+                    <li>Parrot</li>
+            </ul>
+                </li>
+            <li class="item">
+                <h2>Products</h2>
+                <ul>
+                    <li>Bread</li>
+                    <li>Prasley</li>
+                    <li>Cheese</li>
+                </ul>
+            </li>
+            <li class="item">
+                <h2>Technologies</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                </ul>
+            </li>
+            </ul>  
+        </section> 
+        <section class="section"> 
+            <h3 class="black">Завдання 8</h3>
+            <p>1. Обробка відправлення форми form.login-
+                form повинна відбуватися за подією submit.
+                2. Під час відправлення форми сторінка не повинна
+                перезавантажуватися.
+                3. Якщо при сабміті у формі є незаповнені поля,
+                виводь alert з попередженням про те, що All
+                form fields must be filled in. Не
+                додавай на інпути атрибут required, валідація має
+                відбуватися саме через JS.
+                4. Якщо користувач заповнив усі поля і відправив
+                форму, збери значення полів в об'єкт з двома
+                властивостями, де ключ — це ім'я інпутів, а
+                значення — відповідні значення цих інпутів,
+                очищені від пробілів по краях. Для доступу до
+                елементів форми використовуй
+                властивість elements.
+                5. При сабміті форми виведи об'єкт із введеними
+                даними в консоль і очисти значення полів форми
+                методом reset.                         
+            </p>
+            <h3 class="black">Виконання</h3>
+            <form class="login-form">
+                <label>
+                    Email
+                    <input type="email" name="email" />
+                </label>
+                <br>
+                <label>
+                    Password
+                    <input type="password" name="password" />
+                </label>
+                <br>
+                <button type="submit">Log in</button>
+            </form>
+        </section> 
+        <section class="section"> 
+            <h3 class="black">Завдання 9</h3>
+            <p> Напиши скрипт, який змінює колір фону
+                елемента &lt;body&gt; через інлайн-стиль по кліку
+                на button.change-color і задає це значення
+                кольору текстовим вмістом для span.color.
+                &lt;div class=&quot;widget&quot;&gt;
+                &lt;p&gt;Background color: &lt;span
+                class=&quot;color&quot;&gt;-&lt;/span&gt;&lt;/p&gt;
+                &lt;button type=&quot;button&quot; class=&quot;change-
+                color&quot;&gt;Change color&lt;/button&gt;
+                &lt;/div&gt;
+                Для генерування випадкового кольору використовуй
+                функцію getRandomHexColor().
+                function getRandomHexColor() {
+                return `#${Math.floor(Math.random() *
+                16777215)
+                .toString(16)
+                .padStart(6, 0)}`;
+                }
+                Зверни увагу, що
+                функція getRandomHexColor() повертає колір у
+                hex-форматі, в той час як колір фону на &lt;body&gt; буде у
+                форматі rgb. Це нормально й не потребує якихось
+                правок.       
+            </p>
+            <h3 class="black">Виконання</h3>
+            <div class="widget">
+                <p>Background color: <span class="color">-</span></p>
+                <button type="button" class="change-color">Change color</button>
+            </div>
+        </section> 
+        <section class="section"> 
+            <h3 class="black">Завдання 10</h3>
+            <p> Напиши скрипт створення й очищення колекції
+                елементів з наступним функціоналом.
+                Є input, у який користувач вводить бажану кількість
+                елементів. Після натискання на кнопку Create має
+                рендеритися (додаватися в DOM) колекція з
+                відповідною кількістю елементів і очищатися значення
+                в інпуті. При повторному натисканні на
+                кнопку Create поверх старої колекції має рендеритись
+                нова. Після натискання на кнопку Destroy колекція
+                елементів має очищатися.
+                &lt;div id=&quot;controls&quot;&gt;
+                &lt;input type=&quot;number&quot; min=&quot;1&quot; max=&quot;100&quot;
+                step=&quot;1&quot; /&gt;
+                &lt;button type=&quot;button&quot; data-
+                create&gt;Create&lt;/button&gt;
+                &lt;button type=&quot;button&quot; data-
+                destroy&gt;Destroy&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div id=&quot;boxes&quot;&gt;&lt;/div&gt;
+                Після натискання користувачем на
+                кнопку Create треба провалідувати значення в input,
+                воно має бути в межах від 1 до 100 включно. Тільки
+                якщо воно задоволяє умову, мають додаватися
+                нові &lt;div&gt; елементи в DOM.
+                Для рендеру елементів на сторінці створи
+                функцію createBoxes(amount), яка приймає один
+                параметр — число, що зберігає кількість елементів для
+                рендеру. Функція має створювати
+                стільки &lt;div&gt; елементів, скільки вказано
+                в параметрі amount і додавати їх у DOM дочірніми
+                елементами для div#boxes.
+                1. Розміри першого &lt;div&gt; елемента мають бути
+                30px на 30px.
+                2. Кожен наступний елемент повинен бути ширшим і вищим від попереднього на 10px.
+                3. Усі елементи повинні мати випадковий колір
+                фону. Використовуй готову
+                функцію getRandomHexColor() для отримання
+                випадкового кольору.
+                function getRandomHexColor() {
+                return `#${Math.floor(Math.random() *
+                16777215)
+                .toString(16)
+                .padStart(6, 0)}`;
+                }
+                
+                Для очищення колекції після натискання на
+                кнопку Destroy створи функцію destroyBoxes(), яка
+                очищає вміст div#boxes, у такий спосіб видаляючи всі
+                створені елементи.      
+            </p>
+            <h3 class="black">Виконання</h3>
+            <div id="controls">
+                <input type="number" min="1" max="100" step="1" />
+                <button type="button" data-create>Create</button>
+                <button type="button" data-destroy>Destroy</button>
+            </div>
+            <div id="boxes"></div>
+        </section> 
+        <section class="section"> 
+            <h3 class="black">Висновки</h3>
+            <p> 
+                Під час виконання лабораторної роботи отримано практичні навички роботи з об'єктами,матодами об'єктів.
+                Повторно закріплено матеріал щодо роботи з callback функціями, стрілочними функціями, а також стрілочними функціями як callback​. Реалізацію програм здійснено засобами мови JAVASCRIPT
+        </section>   
+    </main>
+    <footer class="footer">
+        <p>Група ЗПІ-зп31 Сачкова Юлія</p>
+    </footer>
+    <script src="./js/script2.js"></script>
+    <script src="./js/script4.js"></script>
+    <script src="./js/script6.js"></script>
+    <script src="./js/script7.js"></script>
+    <script src="./js/script8.js"></script>
+    <script src="./js/script9.js"></script>
+    <script src="./js/script10.js"></script>
+</body>
+</html>

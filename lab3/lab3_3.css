@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.header{
+width: 100%;
+}
+.main{
+    width: 100%;
+}
+.footer{
+    width: 100%;
+    display: flex;
+}
+
+.tittle {
+    background-color: black;
+    font-size: xx-large;
+    text-transform: uppercase;
+    color:white;
+    text-align: center;
+}
+.folders {
+    display: flex;
+    justify-content: space-between;
+}
+.folder {
+    width: 10%;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    margin: 10px;
+    font-size: 10px;
+}
+.folder img{
+    width: 60%;
+}
+.firstPart {
+    display: flex;
+}
+.imgFirst {
+    width: 50%;
+    padding-top: 5%;
+    justify-content: baseline;
+    align-items: center;
+    background-color: black;
+    padding: auto 10px;
+}
+.imgFirst img {
+    width: 100%;
+    border-radius: 40%;
+}
+.firstPartInfo {
+    background-color: black;
+    padding-left: 20px;
+}
+.firstPartTitle {
+    text-align: center;
+    padding:10px;
+    margin: 10px;
+}
+.fierstdPartH3 {
+    color: white;
+}
+.fierstdPartH2 {
+    color: blue;
+    text-transform: uppercase;
+}
+.firstPartText {
+    display: flex;
+    flex-wrap: wrap;
+}
+.first {
+    width: 50%;
+    padding:10px;
+}
+.firstParH {
+    color: orange;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.firstPartP {
+    color: white;
+    text-align: justify;
+
+}
+.second {
+    width: 50%;
+    padding:10px;
+}
+.third {
+    width: 50%;
+    padding:10px;
+}
+.fourth {
+    width: 50%;
+    padding:10px;
+}
+.secondPart {
+    display: flex;
+}
+.imgSecond {
+    width: 20%;
+    justify-content: baseline;
+    align-items: center;
+    padding: auto 10px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 1%;
+}
+.imgSecond img{
+    width: 100%;
+    border-radius: 50%;
+}
+.secondPartInfo {
+    margin-left: 20%;
+    margin-top: 5%;
+}
+.secondPartTitle {
+    text-align: center;
+}
+.secondPartH3 {
+    color: orange;
+}
+
+ul{
+    margin-left: 50px;
+}
+li{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+}
+p{
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+.date {
+    width: 70%;
+    background-color: black;
+}
+.icons {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+.icon {
+    width: 50%;
+    margin-left: 5px;
+}

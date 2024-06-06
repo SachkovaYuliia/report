@@ -1,0 +1,229 @@
+{
+    "data": {
+        "labs": {
+            "lb1": {
+                "title": "Лабораторна робота №1",
+                "rel_path": "/lab1",
+                "buttons": {
+                    "topic_btn": {
+                        "title": "Тема лабораторної роботи №1",
+                        "html_file": "/title.html",
+                        "css_file": "/title.css"
+                    },
+                    "tables_btn": {
+                        "title": "Таблиці",
+                        "html_file": "/table.html",
+                        "css_file": "/table.css"
+                    },
+                    "forms_btn": {
+                        "title": "Форми",
+                        "html_file": "/forms.html",
+                        "css_file": "/forms.css"
+                    },
+                    "imgs_btn": {
+                        "title": "Зображення",
+                        "html_file": "/picture.html",
+                        "css_file": "/picture.css"
+                    },
+                    "conclusion_btn": {
+                        "title": "Висновки",
+                        "html_file": "/cons.html",
+                        "css_file": "/conc.css"
+                    }
+                }
+            },
+            "lb2": {
+                "title": "Лабораторна робота №2",
+                "rel_path": "/lab2",
+                "buttons": {
+                    "topic_btn": {
+                        "title": "Тема лабораторної роботи №2",
+                        "html_file": "/title.html",
+                        "css_file": "/title.css"
+                    },
+                    "2_id_selector": {
+                        "title": "Стилізація, iдентифікатори",
+                        "html_file": "/lab2.html",
+                        "css_file": "/lab2.css"
+                    },
+                    "2_text_elements": {
+                        "title": "Списки",
+                        "html_file": "/list.html",
+                        "css_file": "/list.css"
+                    }
+                }
+                
+            },
+            "lb3": {
+                "title": "Лабораторна робота №3",
+                "rel_path": "/lab3",
+                "buttons": {
+                    "topic_btn": {
+                        "title": "Тема лабораторної роботи №3",
+                        "html_file": "/title.html",
+                        "css_file": "/title.css"
+                    },
+                    "3_sd": {
+                        "title": "Гумова таблична верстка",
+                        "html_file": "/lab3_2_1.html",
+                        "css_file": "/lab3_2_1.css"
+                    },
+                    "4_sd": {
+                        "title": "Гумова блокова верстка",
+                        "html_file": "/lab_3_2_2.html",
+                        "css_file": "/lab_3_2_2.css"
+                    },
+                    "3_my_site": {
+                        "title": "Сайт за зразком",
+                        "html_file": "/lab3_3.html",
+                        "css_file": "/lab3_3.css"
+                    },
+                    "4_my_site": {
+                        "title": "Мій сайт",
+                        "html_file": "/index.html",
+                        "css_file": "/style.css"
+                    }
+                }
+            },
+            "lb4": {
+                "title": "Лабораторна робота №4",
+                "rel_path": "/lab4",
+                "buttons": {
+                    "topic_btn": {
+                        "title": "Тема лабораторної роботи №4",
+                        "html_file": "/title.html",
+                        "css_file": "/title.css"
+                    },
+                    "4_arrays": {
+                        "title": "Робота з масивами",
+                        "html_file": "/lab4.html",
+                        "css_file": "/lab4.css"
+                    },
+                    "4_graph": {
+                        "title": "Cлайдер",
+                        "html_file": "/slider.html",
+                        "css_file": "/slider.css"
+                    }
+                }
+            },
+            "lb5": {
+                "title": "Лабораторна робота №5",
+                "rel_path": "/lab5 ",
+                "buttons": {
+                    "topic_btn": {
+                        "title": "Тема лабораторної роботи №5",
+                        "html_file": "/title.html",
+                        "css_file": "/title.css"
+                    },
+                    "5_arr": {
+                        "title": "Упорядкування масиву",
+                        "html_file": "/arr.html",
+                        "css_file": "/css/styles.css"
+                    },
+                    "5_menu": {
+                        "title": "Динамічне меню",
+                        "html_file": "/menu.html",
+                        "css_file": "/css/styles.css"
+                    }
+                }
+            },
+            "lb6": {
+                "title": "Лабораторна робота №6",
+                "rel_path": "/lab6 ",
+                "buttons": {
+                    "topic_btn": {
+                        "title": "Тема лабораторної роботи №6",
+                        "html_file": "/title.html",
+                        "css_file": "/title.css"
+                    },
+                    "2": {
+                        "title": "2",
+                        "html_file": "/2.html",
+                        "css_file": "/css/styles.css"
+                    },
+                    "4": {
+                        "title": "4",
+                        "html_file": "/4.html",
+                        "css_file": "/css/styles.css"
+                    },
+                    "6": {
+                        "title": "6",
+                        "html_file": "/6.html",
+                        "css_file": "/title.css"
+                    },
+                    "8": {
+                        "title": "8",
+                        "html_file": "/8.html",
+                        "css_file": "/css/styles.css"
+                    },
+                    "9": {
+                        "title": "9",
+                        "html_file": "/9.html",
+                        "css_file": "/css/styles.css"
+                    },
+                    "10": {
+                        "title": "10",
+                        "html_file": "/10.html",
+                        "css_file": "/css/styles.css"
+                    },
+                    "conclusions": {
+                        "title": "Висновки",
+                        "html_file": "/conclusions.html",
+                        "css_file": "/css/styles.css"
+                    }
+                }
+            },
+            "lb7": {
+                "title": "Лабораторна робота №7",
+                "rel_path": "/lab7 ",
+                "buttons": {
+                    "topic_btn": {
+                        "title": "Тема лабораторної роботи №7",
+                        "html_file": "/title.html",
+                        "css_file": "/title.css"
+                    },
+                    "2": {
+                        "title": "2",
+                        "html_file": "/2.html",
+                        "css_file": "/css/styles.css"
+                    },
+                    "4": {
+                        "title": "4",
+                        "html_file": "/4.html",
+                        "css_file": "/css/styles.css"
+                    },
+                    "6": {
+                        "title": "6",
+                        "html_file": "/6.html",
+                        "css_file": "/6.css"
+                    },
+                    "7": {
+                        "title": "7",
+                        "html_file": "/7.html",
+                        "css_file": "/css/styles.css"
+                    },
+                    "8": {
+                        "title": "8",
+                        "html_file": "/8.html",
+                        "css_file": "/css/styles.css"
+                    },
+                    "9": {
+                        "title": "9",
+                        "html_file": "/9.html",
+                        "css_file": "/css/styles.css"
+                    },
+                    "10": {
+                        "title": "10",
+                        "html_file": "/10.html",
+                        "css_file": "/css/styles.css"
+                    },
+                    "conclusions": {
+                        "title": "Висновки",
+                        "html_file": "/conclusions.html",
+                        "css_file": "/css/styles.css"
+                    }
+                }
+            }
+        }
+    }
+}
